@@ -170,6 +170,7 @@ class train {
         for ($i = 0; $i < $total && (empty(self::$from_station_code) || empty(self::$to_station_code)); $i++) {
             $num_mod = $i % 5;
             #[0:+2,1:+1,2:0,3:-1,4:-2]
+            #$num_array = array(2,1,0,-1,-2);
             $num_array = array(2,1,0,-1,-2);
             $station_array = array(1,0,-1,-2,-3);
             if (empty(self::$from_station_code) && $stations[$i] == self::$from_station_name) {
